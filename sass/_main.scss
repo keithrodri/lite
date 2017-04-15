@@ -1,0 +1,133 @@
+
+
+// body { @include container(100px); }
+nav { @include span(3 of 12); }
+
+body {
+  background-color: blue;
+  display: block;
+  @include container(show overlay);
+}
+
+
+$xs : 340px;
+$sm : 544px;
+$md : 768px;
+$lg : 991px;
+$xl : 1200px;
+
+$mw : min-width;
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+
+  debug: (
+  image: show,
+  color: blue,
+  output: overlay,
+  toggle: right bottom,
+),
+);
+
+
+.container {
+  // max-width: 1200px;
+  // margin: 20px auto;
+  @include container(960px);
+  @include show-grid(overlay);
+
+  background-color: rgba(white, .95);
+  padding: 50px;
+}
+
+
+#masthead {
+  background-color: #444;
+}
+
+//woo
+
+body.single-product {
+.woocommerce-breadcrumb {
+  @include span(12);
+}
+.product {
+  @include span(12);
+}
+  .images {
+    @include span(6 at 7);
+
+     img {
+       max-width: 100%;
+       height: auto;
+     }
+  }
+
+
+  .entry-summary {
+    @include span(6 at 0);
+  }
+
+
+
+  #search-2 {
+    @include span(6);
+  }
+
+
+  #recent-posts-2 {
+    @include span(6);
+  }
+
+}
+
+@media ( min-width: $lg) {
+  body {
+    background-color: red;
+  }
+
+}
+
+#archives-2 {
+  background-color: pink;
+  @include span(4 at 9);
+  margin-bottom: 0;
+
+}
+#categories-2 {
+  background-color: green;
+  height: 400px;
+
+  @include span(8 break);
+}
+
+
+#meta-2 {
+  background-color: orange;
+  @include span(4);
+
+}
+
+
+//@include span(full);
+
+//@include span(8 break);
+
+
+#recent-posts-2 {
+  li {
+    @include gallery(2 of 10);
+    background-color: yellow;
+
+  }
+}
+
+
+input::placeholder {
+  font-size: 20px;
+  color: #333;
+}

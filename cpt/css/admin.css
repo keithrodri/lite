@@ -1,0 +1,138 @@
+/* --- THEME FORCE EVENTS (CUSTOM POST TYPE) --- */
+/* Columns CPT Events */
+th#tf_col_ev_date, th#tf_col_ev_cat {
+	width: 150px;
+}
+td.tf_col_ev_date em {
+	color: gray;
+}
+th#tf_col_ev_times {
+	width: 150px;
+}
+th#tf_col_ev_thumb {
+	width: 100px;
+}
+th#tf_col_menu_order {
+	width: 60px;
+}
+td.tf_col_menu_id {
+	color: gray;
+	text-align: right;
+}
+td.tf_col_menu_order {
+	color: #219B38;
+	text-align: right;
+}
+th#tf_col_menu_thumb {
+	width: 100px;
+}
+td.tf_col_menu_thumb img {
+	border: 1px solid #D8D8D8;
+}
+th#tf_col_menu_cat, th#tf_col_menu_title, th#tf_col_menu_size {
+	width: 150px;
+}
+/* Metabox */
+.tf-meta {
+}
+.tf-meta ul li {
+	height: 20px;
+	clear: both;
+	margin: 0 0 15px 0;
+}
+.tf-meta ul li label {
+	width: 100px;
+	display: block;
+	float: left;
+	padding-top: 4px;
+}
+.tf-meta ul li input {
+	width: 125px;
+	display: block;
+	float: left;
+}
+.tf-meta ul li em {
+	width: 200px;
+	display: block;
+	float: left;
+	color: gray;
+	margin-left: 10px;
+	padding-top: 4px;
+}
+#custom-type-list {
+	margin: 20px 0;
+}
+#custom-type-list li {
+	border: 1px solid #DDD;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #F7F7F7;
+	max-width: 400px;
+	padding: 10px;
+	cursor: move;
+}
+#loading-animation {
+	display: none;
+}
+h1 {
+	color: #333333;
+}
+.cbsc-textarea, .cbsc-row-content {
+	width: 100%;
+}
+.day-time .cbsc-textarea {
+	max-width: 163px;
+	display: block;
+}
+.meta-row {
+	margin-bottom: 25px;
+}
+.social-section {
+	display: inline-block;
+	width: 46%;
+	margin-right: 2%;
+}
+.pp-select {
+	margin-bottom: 10px;
+}
+/* Field styles */
+.meta-row {
+	border-bottom: 1px solid #E9E9E9;
+	padding: 0px 0px 10px 0px;
+}
+.meta-th {
+	display: inline-block;
+	padding: 0px 0px 10px 0px;
+	font-weight: bold;
+}
+.meta-tr {
+	display: inline-block;
+}
+.meta-td.day-date {
+	display: inline-block;
+	width: 46%;
+	margin-right: 2%;
+}
+.meta {
+	margin-top: 20px;
+}
+.dwwp-textarea {
+}
+.quicktags-toolbar {
+	margin-bottom: 5px;
+	display: inline-block;
+	background: #FFFFFF !important;
+	border-bottom: none !important;
+}
+
+
+#cbet_meta {
+	background-color: blue !important;
+
+
+}
+.meta-td.day-date {
+	color: blue !important;
+
+}

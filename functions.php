@@ -162,3 +162,46 @@ function woocommerce_support() {
 
 // Woo Style - Or just remove them all in one line
 add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
+
+
+/** removes auto paragraph tags */
+
+function get_rid_of_wpautop(){
+ if(is_page()){
+   remove_filter ('the_content', 'wpautop');
+   remove_filter ('the_excerpt', 'wpautop');
+ }
+}
+
+add_action( 'template_redirect', 'get_rid_of_wpautop' );
+
+
+/// includes instafeed.js
+wp_enqueue_script('instafeed', get_template_directory_uri() . '/js/instafeed.min.js', array('jquery'));
+
+
+/////////////////////////////////////////////////////////////////////////////////
+/// Custom post types
+
+require get_stylesheet_directory() . '/cpt/event.php';
+// require get_stylesheet_directory() . '/cpt/quote.php';
+wp_enqueue_script('gallery-metabox', get_template_directory_uri() .  '/cpt/js/gallery-metabox.js', array('jquery', 'jquery-ui-sortable'));
+wp_enqueue_style('gallery-metabox', get_template_directory_uri() .  '/cpt/css/gallery-metabox.css');
+wp_enqueue_style('gallery-metabox', get_template_directory_uri() .  '/cpt/css/admin.css');
+
+wp_enqueue_style('ui-datepicker', get_template_directory_uri() . '/cpt/css/jquery-ui-1.8.9.custom.css');
+wp_enqueue_script('ui-datepicker', get_template_directory_uri() . '/cpt/js/jquery.ui.datepicker.js');
+
+
+/// Image Support
+
+if (class_exists('MultiPostThumbnails')) {
+
+new MultiPostThumbnails(array(
+'label' => 'Directory Thumbnail',
+'id' => 'directory-thumbnail',
+'post_type' => 'tenant'
+ ) );
+
+ }

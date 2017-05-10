@@ -12,12 +12,63 @@
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 				<?php the_content(); ?>
-				<p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-				<p>Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.</p>
-				<p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis.</p>
-				<p>Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.</p>
-				<p>Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+				<h1 class="h1">Heading 1</h1>
+
+				<h2 class="h2">Heading 1</h2>
+
+				<h3 class="h3">Heading 1</h3>
+
+				<h4 class="h4">Heading 1</h4>
+
+				<h5 class="h5">Heading 1</h5>
+
+				<h6 class="h6">Heading 1</h6>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+				<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+
+				<hr>
+
+				<hr class="minor">
+
+				<p>this is a para with <a href="#">link</a> here.</p>
+
+				<a href="#" class="btn_a">button A</a>
+
+				<a href="#" class="btn_b">button B</a>
+
+				<a href="#" class="btn_c">button C</a>
+
+				<a href="#" class="btn_d">button D</a>
+
+
+				<!-- IG FEED -->
+
+<script type="text/javascript">
+		var feed = new Instafeed({
+			get: 'user',
+				userId: '481507042',
+				clientId: ' 3a0813c625b8491abe5a1495db0c8ca8',
+				accessToken: '481507042.3a81a9f.856410166e6e4544b0619f2d4c724870',
+			limit: '8',
+			resolution: 'standard_resolution',
+			sortBy: 'most-recent',
+			template: '<div class="instafeed_single"><a class="ig_outer" target="_blank" href="{{link}}"><div class="ig_post"><img src="{{image}}"/></div></a></div>',
+
+		});
+		feed.run();
+</script>
+
+			<div class="ig_footer">
+				<div class="row">
+					<div id="instafeed" class=""></div>
+					<div class="col-md-12">
+									<a href="#" class="btn_a">View All</a>
+					</div>
+				</div>
+			</div>
 
 				<?php comments_template( '', true ); // Remove if you don't want comments ?>
 

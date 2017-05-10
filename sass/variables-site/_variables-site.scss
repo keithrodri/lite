@@ -1,3 +1,16 @@
+
+$white : #ffffff;
+
+$gray_l : #f9f9f9;
+
+$red :  #b22928;
+
+$copper : #997a3d;
+$copper_d : darken($copper, 5%);
+$black : #232323;
+
+
+
 $color__background-body: #000;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
@@ -8,10 +21,10 @@ $color__background-ins: #fff9c0;
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
-$color__text-main: #404040;
+$color__link: $copper;
+$color__link-visited: $copper;
+$color__link-hover: $copper_d;
+$color__text-main: $black;
 
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;

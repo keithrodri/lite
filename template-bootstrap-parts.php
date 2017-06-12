@@ -13,17 +13,17 @@
 
 				<?php the_content(); ?>
 
-				<h1 class="h1">Heading 1</h1>
+				<h1 class="h1">Heading 1 Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</h1>
 
-				<h2 class="h2">Heading 1</h2>
+				<h2 class="h2">Heading 2 Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</h2>
 
-				<h3 class="h3">Heading 1</h3>
+				<h3 class="h3">Heading 3 Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</h3>
 
-				<h4 class="h4">Heading 1</h4>
+				<h4 class="h4">Heading 4 Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</h4>
 
-				<h5 class="h5">Heading 1</h5>
+				<h5 class="h5">Heading 5 Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</h5>
 
-				<h6 class="h6">Heading 1</h6>
+				<h6 class="h6">Heading 6 Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</h6>
 
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
 
@@ -35,13 +35,44 @@
 
 				<p>this is a para with <a href="#">link</a> here.</p>
 
-				<a href="#" class="btn_a">button A</a>
+				<a href="#" class="btn_1">button A</a>
 
-				<a href="#" class="btn_b">button B</a>
+				<a href="#" class="btn_2">button B</a>
 
-				<a href="#" class="btn_c">button C</a>
+				<a href="#" class="btn_3">button C</a>
 
-				<a href="#" class="btn_d">button D</a>
+				<a href="#" class="btn_4">button D</a>
+
+<a href="#openModalContact">11111</a>
+				<!-- Contact Modal -->
+				<div id="openModalContact" class="modalContact">
+						<div class="containerModal left">	<a href="#close" title="Close" class="closeModal">
+							<?php echo file_get_contents(__DIR__.'/img/close.svg');?>
+						</a>
+								<h1 class="h2">Hello!</h1>
+								<p>Natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								<?php echo do_shortcode( '[gravityform id="4" title="true" description="true" ajax="true"]' ); ?>
+
+					 </div>
+				</div>
+
+				<script>
+
+				jQuery(document).ready(function($) {
+
+					$modal = $('.containerModal');
+					$overlay = $('#openModalContact');
+
+				$('#openModalContact').on('click', function() {
+					$overlay.fadeOut();
+					// $modal.removeClass('state-leave').addClass('state-appear');
+				});
+
+			});
+
+				</script>
+				<!-- /Contact Modal -->
+
 
 
 				<!-- IG FEED -->

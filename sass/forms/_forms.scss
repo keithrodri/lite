@@ -13,12 +13,12 @@ input[type="submit"] {
 	padding: .6em 1em .4em;
 
 	&:hover {
-		border-color: $color__border-button-hover;
+		// border-color: ;
 	}
 
 	&:active,
 	&:focus {
-		border-color: $color__border-button-focus;
+		// border-color: ;
 	}
 }
 
@@ -39,18 +39,18 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: $color__text-input;
-	border: 1px solid $color__border-input;
+	color: #fff;
+	border: 1px solid #000;
 	border-radius: 3px;
 	padding: 3px;
 
 	&:focus {
-		color: $color__text-input-focus;
+		color: #000;
 	}
 }
 
 select {
-	border: 1px solid $color__border-input;
+	border: 1px solid #fff;
 }
 
 textarea {

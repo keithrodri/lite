@@ -167,14 +167,14 @@ add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
 /** removes auto paragraph tags */
 
-function get_rid_of_wpautop(){
+function no_wpautop(){
  if(is_page()){
    remove_filter ('the_content', 'wpautop');
    remove_filter ('the_excerpt', 'wpautop');
  }
 }
 
-add_action( 'template_redirect', 'get_rid_of_wpautop' );
+add_action( 'template_redirect', 'no_wpautop' );
 
 
 /// includes instafeed.js
